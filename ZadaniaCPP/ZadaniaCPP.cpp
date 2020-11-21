@@ -1,13 +1,12 @@
 ﻿// ZadaniaCPP.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
 //
-
-#include <iostream>
-#include <string>
-using namespace std;
+#include "define.h"
+#include "Zadania.h"
 /*Zadanie nr 1 : Utworzyć klasę Zadania gdzie
-będziemy umieszczać rozwiązania zadań */
+będziemy umieszczać rozwiązania zadań i
+przenieść linijkę cout ... do metody zadanieNr1*/
 int main() {
-    cout << "Poczatek programu\n";
+    Zadania::zadanieNr1();
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
