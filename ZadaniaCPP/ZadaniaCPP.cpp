@@ -2,9 +2,13 @@
 //
 #include "define.h"
 #include "Zadania.h"
+#include "Kolekcja.h"
 /*Zadanie nr 1 : Utworzyć klasę Zadania gdzie
 będziemy umieszczać rozwiązania zadań i
 przenieść linijkę cout ... do metody zadanieNr1*/
+/*Zadanie nr 2 : Utworzyć klasę Kolekcja która będzie
+zawierać obsługę (=drukowanie) zawartości wektora łańcuchów.
+Dopisać konstruktor */
 int main() {
     Zadania::zadanieNr1();
 }
