@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
-
-int main()
-{
-    std::cout << "Poczatek programu\n";
+#include <string>
+using namespace std;
+/*Zadanie nr 1 : Utworzyć klasę Zadania gdzie
+będziemy umieszczać rozwiązania zadań */
+int main() {
+    cout << "Poczatek programu\n";
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
