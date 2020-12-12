@@ -8,7 +8,9 @@ będziemy umieszczać rozwiązania zadań i
 przenieść linijkę cout ... do metody zadanieNr1*/
 /*Zadanie nr 2 : Utworzyć klasę Kolekcja która będzie
 zawierać obsługę (=drukowanie) zawartości wektora łańcuchów.
-Dopisać konstruktor */
+Dopisać konstruktor 
+Objaśnienie: vector to jeden z elementów tzw. STL 
+(standard template library), inne szablony to : list, set, map*/
 int main() {
     Zadania::zadanieNr1();
 }
