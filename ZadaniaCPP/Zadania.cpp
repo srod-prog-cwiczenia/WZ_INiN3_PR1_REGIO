@@ -11,10 +11,19 @@ void f1(int p) { //funkcja ,,wisz¹ca'' (nie przynale¿y do ¿adnej klasy o zgrozo 
 	cout << "Przekazywanie przez wartoœæ: " << p << endl;
 	p += 3;
 }
+void f2(int *p) { //przekazywanie przez wskaŸnik (konstrukcja czêsta w ANSI C):
+	cout << "Przekazywanie przez wskaŸnik: " << *p << endl;
+	*p += 3;
+}
 void Zadania::zadanieNr2()
 {
 	//przekazywanie przez wartoœæ:
 	int i = 10;
 	f1(i);
-	cout << "Wartosc i po wyjsciu z funkcji: " << i;
+	cout << "Wartosc i po wyjsciu z funkcji f1: " << i << endl;
+    //przekazywanie przez wskaŸnik (ostro¿nie - to doœæ archaiczny sposób, niezalecany w C++)
+	i = 10;
+	f2(&i);
+	cout << "Wartosc i po wyjsciu z funkcji f2: " << i << endl;
+
 }
