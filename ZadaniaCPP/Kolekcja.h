@@ -8,5 +8,6 @@ private:
 public:
 	Kolekcja(); //konstruktor
 	void wypisanie();
+	~Kolekcja();//w C++ mo¿na do klasy zdefiniowaæ tzw. destruktor
 };
 

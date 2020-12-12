@@ -3,16 +3,38 @@
 #include "define.h"
 #include "Zadania.h"
 #include "Kolekcja.h"
-/*Zadanie nr 1 : Utworzyć klasę Zadania gdzie
+/*Zadanie nr 0 : Utworzyć klasę Zadania gdzie
 będziemy umieszczać rozwiązania zadań i
 przenieść linijkę cout ... do metody zadanieNr1*/
-/*Zadanie nr 2 : Utworzyć klasę Kolekcja która będzie
+/*Zadanie nr 1 : Utworzyć klasę Kolekcja która będzie
 zawierać obsługę (=drukowanie) zawartości wektora łańcuchów.
 Dopisać konstruktor 
 Objaśnienie: vector to jeden z elementów tzw. STL 
-(standard template library), inne szablony to : list, set, map*/
+(standard template library), inne szablony to : list, set, map
+Zadanie nr 2: 
+Napisać przykład na trzy sposoby przekazywania parametru:
+przez wartość, przez wskaźnik i przez zmienną
+*/
+
 int main() {
-    Zadania::zadanieNr1();
+    bool koniec = false;
+    do {
+        cout << "1.Zadanie z kolekcji\n2.Zadanie z przekazywania zmiennych/wartości\n";
+        char odp;
+        cin >> odp;
+        switch (odp) {
+        case '1':
+            Zadania::zadanieNr1();
+            break;
+        case '2':
+            cout << "TODO\n";
+            break;
+        default:
+            koniec = true;
+            break;
+        }
+    }
+    while (!koniec);
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania

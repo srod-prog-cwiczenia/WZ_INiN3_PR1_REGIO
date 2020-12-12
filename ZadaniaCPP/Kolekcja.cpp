@@ -31,3 +31,8 @@ void Kolekcja::wypisanie()
 		//mo¿na po prostu tak: for (auto ele : vec)
 		cout << ele << endl;
 }
+
+Kolekcja::~Kolekcja()
+{
+	//na razie nic tu nie ma :)
+}
