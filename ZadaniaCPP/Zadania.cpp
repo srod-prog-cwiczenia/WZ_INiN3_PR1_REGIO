@@ -7,3 +7,14 @@ void Zadania::zadanieNr1()
 	kolekcja->wypisanie();
 	delete kolekcja;
 }
+void f1(int p) { //funkcja ,,wisz¹ca'' (nie przynale¿y do ¿adnej klasy o zgrozo ;) )
+	cout << "Przekazywanie przez wartoœæ: " << p << endl;
+	p += 3;
+}
+void Zadania::zadanieNr2()
+{
+	//przekazywanie przez wartoœæ:
+	int i = 10;
+	f1(i);
+	cout << "Wartosc i po wyjsciu z funkcji: " << i;
+}

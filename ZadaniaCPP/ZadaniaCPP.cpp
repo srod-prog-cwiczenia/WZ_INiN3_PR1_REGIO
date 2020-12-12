@@ -27,7 +27,7 @@ int main() {
             Zadania::zadanieNr1();
             break;
         case '2':
-            cout << "TODO\n";
+            Zadania::zadanieNr2();
             break;
         default:
             koniec = true;
