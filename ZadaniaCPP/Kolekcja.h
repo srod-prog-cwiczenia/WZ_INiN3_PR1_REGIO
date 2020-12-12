@@ -6,6 +6,7 @@ private:
 	vector<string> vec;
 	vector<int> vI; 
 public:
-	Kolekcja();
+	Kolekcja(); //konstruktor
+	void wypisanie();
 };
 

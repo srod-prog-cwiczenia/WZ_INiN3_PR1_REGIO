@@ -1,6 +1,9 @@
-#include "Zadania.h"
 #include "define.h"
+#include "Zadania.h"
+#include "Kolekcja.h"
 void Zadania::zadanieNr1()
 {
-	cout << "Poczatek programu\n";
+	Kolekcja *kolekcja = new Kolekcja();
+	kolekcja->wypisanie();
+	delete kolekcja;
 }
