@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Kolekcja.cpp" />
+    <ClCompile Include="SformatowanaKolekcja.cpp" />
     <ClCompile Include="Zadania.cpp" />
     <ClCompile Include="ZadaniaCPP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h" />
     <ClInclude Include="Kolekcja.h" />
+    <ClInclude Include="SformatowanaKolekcja.h" />
     <ClInclude Include="Zadania.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

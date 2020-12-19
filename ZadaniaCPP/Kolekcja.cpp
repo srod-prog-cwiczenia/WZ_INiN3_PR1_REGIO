@@ -9,6 +9,11 @@ Kolekcja::Kolekcja()
 	
 }
 
+string Kolekcja::formatowanie(const string& txt)
+{
+	return txt;
+}
+
 void Kolekcja::wypisanie()
 {
 	/*ró¿ne wersje pêtli po elementach kolekcji celem wypisania:*/
@@ -29,7 +34,7 @@ void Kolekcja::wypisanie()
 	cout << "Elementy wektora vec (petla foreach): " << endl;
 	for (const auto &ele : vec) //tak ,,lepiej'', ale 
 		//mo¿na po prostu tak: for (auto ele : vec)
-		cout << ele << endl;
+		cout << formatowanie(ele) << endl;
 }
 
 Kolekcja::~Kolekcja()

@@ -3,6 +3,7 @@
 #include "define.h"
 #include "Zadania.h"
 #include "Kolekcja.h"
+#include "SformatowanaKolekcja.h"
 /*Zadanie nr 0 : Utworzyć klasę Zadania gdzie
 będziemy umieszczać rozwiązania zadań i
 przenieść linijkę cout ... do metody zadanieNr1*/
@@ -18,7 +19,8 @@ Zadanie nr 3:
 Napisać w klasie Kolekcja metodę 
 string formatowanie (const string &txt) która
 będzie formatować wypisywany łańcuch. Zostawić
-ją ,,domyślną'' {return txt;}. Potem utworzyć klasę
+ją ,,domyślną'' {return txt;}. Użyć jej w metodzie
+wypisanie(). Potem utworzyć klasę
 potomną od Kolekcja np. KolekcjaFormatowanie i tam
 ,,przesłonić'' metodą o tym samym interfejsie, ale
 formatującą text (np. zamieniającą tekst na duże litery).
@@ -28,7 +30,9 @@ Użyć tej nowej klasy.
 int main() {
     bool koniec = false;
     do {
-        cout << "1.Zadanie z kolekcji\n2.Zadanie z przekazywania zmiennych/wartości\n";
+        cout << "1.Zadanie z kolekcji\n"
+            "2.Zadanie z przekazywania zmiennych/wartości\n"
+            "3.Zadanie z dziedziczenia klas\n";
         char odp;
         cin >> odp;
         switch (odp) {
@@ -37,6 +41,9 @@ int main() {
             break;
         case '2':
             Zadania::zadanieNr2();
+            break;
+        case '3':
+            Zadania::zadanieNr3();
             break;
         default:
             koniec = true;

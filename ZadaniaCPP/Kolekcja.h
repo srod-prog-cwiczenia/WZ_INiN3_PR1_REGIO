@@ -7,6 +7,7 @@ private:
 	vector<int> vI; 
 public:
 	Kolekcja(); //konstruktor
+	virtual string formatowanie(const string& txt);
 	void wypisanie();
 	~Kolekcja();//w C++ mo¿na do klasy zdefiniowaæ tzw. destruktor
 };

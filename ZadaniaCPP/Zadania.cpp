@@ -1,6 +1,7 @@
 #include "define.h"
 #include "Zadania.h"
 #include "Kolekcja.h"
+#include "SformatowanaKolekcja.h"
 void Zadania::zadanieNr1()
 {
 	Kolekcja *kolekcja = new Kolekcja();
@@ -33,4 +34,11 @@ void Zadania::zadanieNr2()
 	i = 10;
 	f3(i);
 	cout << "Wartosc i po wyjsciu z funkcji f3: " << i << endl;
+}
+
+void Zadania::zadanieNr3()
+{
+	SformatowanaKolekcja * kolekcja = new SformatowanaKolekcja();
+	kolekcja->wypisanie();
+	delete kolekcja;
 }
