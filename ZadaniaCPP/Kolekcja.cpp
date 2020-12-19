@@ -1,12 +1,22 @@
 #include "Kolekcja.h"
 
-Kolekcja::Kolekcja()
+Kolekcja::Kolekcja(char wersja, unsigned int ileP)
 {
 	//dopisujemy 10 liczb:
 	/*for (int i = 0; i < 10; i++)
 		vec.push_back(to_string(i));*/
-	vec = { "Poniedzialek", "Wtorek", "Sroda", "Czwartek", "Piatek", "Sobota", "Niedziela" };
-	
+	switch (wersja) {
+	case 't': //dni tygodnia
+		vec = { "Poniedzialek", "Wtorek", "Sroda", "Czwartek", "Piatek", "Sobota", "Niedziela" };
+		break;
+	case 'l':// do zadanej liczby
+		for (unsigned int i = 1; i <= ileP; i++) {
+			vec.push_back("liczba: " + to_string(i));
+		}
+		break;
+	default:
+		break;
+	}
 }
 
 string Kolekcja::formatowanie(const string& txt)

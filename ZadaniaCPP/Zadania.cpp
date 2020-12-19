@@ -4,7 +4,7 @@
 #include "SformatowanaKolekcja.h"
 void Zadania::zadanieNr1()
 {
-	Kolekcja *kolekcja = new Kolekcja();
+	Kolekcja *kolekcja = new Kolekcja('t');
 	kolekcja->wypisanie();
 	delete kolekcja;
 }
@@ -38,7 +38,16 @@ void Zadania::zadanieNr2()
 
 void Zadania::zadanieNr3()
 {
-	SformatowanaKolekcja * kolekcja = new SformatowanaKolekcja();
-	kolekcja->wypisanie();
-	delete kolekcja;
+	cout << "Pierwszy konstruktor (dni tygodnia) i formatowanie:\n";
+	SformatowanaKolekcja * sk1 = new SformatowanaKolekcja('t');
+	sk1->wypisanie();
+	delete sk1;
+
+	cout << endl << string(50, '=') << endl; //string(50, '=') to wygenerowanie ³añcucha o 50 znakach '='
+
+	cout << "Drugi konstruktor (liczby) i formatowanie:\n";
+	SformatowanaKolekcja* sk2 = new SformatowanaKolekcja('l', 10);
+	sk2->wypisanie();
+	delete sk2;
+
 }

@@ -2,11 +2,10 @@
 #include "define.h"
 class Kolekcja
 {
-private:
+protected:
 	vector<string> vec;
-	vector<int> vI; 
 public:
-	Kolekcja(); //konstruktor
+	Kolekcja(char wersja, unsigned int ileP = 0); //drugi konstruktor - przeci¹¿ony
 	virtual string formatowanie(const string& txt);
 	void wypisanie();
 	~Kolekcja();//w C++ mo¿na do klasy zdefiniowaæ tzw. destruktor
