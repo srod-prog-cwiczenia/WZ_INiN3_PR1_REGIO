@@ -15,7 +15,7 @@ void f2(int *p) { //przekazywanie przez wskaŸnik (konstrukcja czêsta w ANSI C):
 	cout << "Przekazywanie przez wskaŸnik: " << *p << endl;
 	 *p += 3;
 }
-void f3(const int& p) { //prawdziwy tryb przekazywania parametru przez zmienn¹, czêsty w C++ (nie ma go w ANSI C+)
+void f3(int& p) { //prawdziwy tryb przekazywania parametru przez zmienn¹, czêsty w C++ (nie ma go w ANSI C+)
 	cout << "Przekazywanie przez wskaŸnik: " << p << endl;
 	p += 3;
 }
