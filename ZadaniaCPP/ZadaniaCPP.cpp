@@ -14,6 +14,15 @@ Objaśnienie: vector to jeden z elementów tzw. STL
 Zadanie nr 2: 
 Napisać przykład na trzy sposoby przekazywania parametru:
 przez wartość, przez wskaźnik i przez zmienną
+Zadanie nr 3:
+Napisać w klasie Kolekcja metodę 
+string formatowanie (const string &txt) która
+będzie formatować wypisywany łańcuch. Zostawić
+ją ,,domyślną'' {return txt;}. Potem utworzyć klasę
+potomną od Kolekcja np. KolekcjaFormatowanie i tam
+,,przesłonić'' metodą o tym samym interfejsie, ale
+formatującą text (np. zamieniającą tekst na duże litery).
+Użyć tej nowej klasy.
 */
 
 int main() {
