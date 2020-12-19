@@ -25,6 +25,10 @@ potomną od Kolekcja np. KolekcjaFormatowanie i tam
 ,,przesłonić'' metodą o tym samym interfejsie, ale
 formatującą text (np. zamieniającą tekst na duże litery).
 Użyć tej nowej klasy.
+Zadanie nr 4:
+Utworzyć (i przetestować) funkcje toUpper która
+działa na char* a nie na string jak formatowanie
+w klasie KolekcjaFormatowanie.
 */
 
 int main() {
